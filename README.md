@@ -1,7 +1,13 @@
-## Getting Started
+##  ༼ つ ◕_◕ ༽つ em construição ☜(ﾟヮﾟ☜)
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+<h3>Welcome to the  Java world.☕</h3>
 
+##
+
+<h3>🛠 Linguagens utilizadas ⚙</h3>
+<img align="center" alt="Logo-Java" height="90" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg">
+
+<!--
 ## Folder Structure
 
 The workspace contains two folders by default, where:
@@ -16,3 +22,4 @@ Meanwhile, the compiled output files will be generated in the `bin` folder by de
 ## Dependency Management
 
 The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+-->
