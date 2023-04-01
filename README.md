@@ -2,8 +2,6 @@
 
 <h3>Welcome to the  Java world.☕</h3>
 
-##
-
 <h3>🛠 Linguagens utilizadas ⚙</h3>
 <img align="center" alt="Logo-Java" height="90" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg">
 
