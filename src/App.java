@@ -6,13 +6,18 @@ import java.net.http.HttpResponse.BodyHandlers;
 
 import java.util.List;
 import java.util.Map;
+import java.util.jar.Attributes.Name;
 
 
 public class App {
       
     public static void main(String[] args) throws Exception {
+
         
         //fazer umaaa conexão HTTP e buscar os top 10 filmes
+        
+        
+
         String url = "https://raw.githubusercontent.com/alura-cursos/imersao-java-2-api/main/TopMovies.json";
         URI endereco = URI.create(url);
         var client = HttpClient.newHttpClient();
@@ -25,12 +30,24 @@ public class App {
         var parser = new jsonParser();
         List<Map<String, String>> listaDeFilmes = parser.parse(body);
 
-        //exibir e manupular os dados 
-        for (Map<String,String> filme : listaDeFilmes) {
-            System.out.println( filme.get("fullTitle"));
-           // System.out.println(" "+filme.get("image"));
-            System.out.println(filme.get("imDbRating"));
-            System.out.println();
+        //exibir e manipular os dados 
+        for (int i = 0; i <10; i++) {
+            Map<String,String> filme = listaDeFilmes.get(i);
+            System.out.println("\n");
+
+            System.out.println( "\u001b[1m Título:\u001b[m"+  "\u001b[46m \u001b[120m "+filme.get("fullTitle")+"\u001b[m");
+            System.out.println("\u001b[1m IMG:\u001b[m " + filme.get("image"));
+            System.out.println("\u001b[1m Nota:\u001b[m " + filme.get("imDbRating"));
+
+            
+
+            double nota = Double.parseDouble(filme.get("imDbRating"));
+            int star = (int)nota;
+            for (int n= 1; n <= star; n++) {
+                System.out.print("🌟");
+            }
+            System.out.println("\n");
+            
         }
 
     }
